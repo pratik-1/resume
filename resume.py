@@ -109,7 +109,7 @@ st.markdown('''
 txt('**Bachelor of Engineering**, *G.H. Raisoni College of Engineering and Technology, Nagpur*, India', '2009-2013')
 st.markdown(''' 
 - Graduated with First Class Honors.
-- Participated and won 1st prize in technical event in TechFest IIT-Bombay.[certificate](data/techfest.jpg)
+- Participated and won 1st prize in technical event in TechFest IIT-Bombay.[[certificate](https://raw.githubusercontent.com/pratik-1/resume/main/data/techfest.jpg)]
 ''')
 
 #####################
@@ -117,7 +117,7 @@ st.markdown('''
 ## Work Experience
 ''')
 st.markdown('''
-##### Brillio Technologies Ltd.
+##### Brillio Technologies Pvt. Ltd.
 ''')
 txt('**Senior Engineer**, CLIENT: CIENA LTD., MONTREAL, CANADA,', '2019-2019')
 st.markdown('''
@@ -157,7 +157,7 @@ txt('**Trainee**, CLIENT#1(INTERNAL): TCS - ULTIMATIX HRMS, INDIA',  '2014-2016'
 st.markdown('''
 - Prepare functional documents, data migration activities of Core HR module.
 - Development of new reports, automate the report generation process.
-- Single handedly addressed data issues and change requests of HR- international payroll activities.[award](data/Special_Initiative.jpg)
+- Single handedly addressed data issues and change requests of HR- international payroll activities.[[award](https://raw.githubusercontent.com/pratik-1/resume/main/data/Special_Initiative.jpg)]
 ''')
 
 #####################
@@ -185,12 +185,10 @@ st.markdown('''
 ## External Certifications
 ''')
 st.markdown('''
-- [Data Scientist with Python track](\data\Data_Scientist_python_track.jpg)
-- [Data Scientist with R track](data/Data_Scientist_R_track.jpg)
+- [Data Scientist with Python track](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/Data_Scientist_python_track.jpg)
+- [Data Scientist with R track](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/Data_Scientist_R_track.jpg)
 - [Big Data Specialist](data/BD_specialist.jpg)
 ''')
-
-
 
 #####################
 st.markdown('''
