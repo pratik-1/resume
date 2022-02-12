@@ -117,7 +117,7 @@ st.markdown('''
 ## Work Experience
 ''')
 st.markdown('''
-##### Brillio Technologies Pvt. Ltd.
+#### **Brillio Technologies Pvt. Ltd.**
 ''')
 txt('**Senior Engineer**, CLIENT: CIENA LTD., MONTREAL, CANADA,', '2019-2019')
 st.markdown('''
@@ -127,7 +127,7 @@ st.markdown('''
 ''')
 
 st.markdown('''
-##### Tata Consultancy Services Ltd.
+#### **Tata Consultancy Services Ltd.**
 ''')
 txt('**Information Technology Analyst**, CLIENT#4: ATHENE INSURANCE, USA',  '2018-2019')
 st.markdown('''
