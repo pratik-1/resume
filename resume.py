@@ -178,13 +178,15 @@ txt3('Data visualization', '`matplotlib`, `seaborn`, `bokeh`, `ggplot2`')
 txt3('Machine Learning', '`scikit-learn`')
 txt3('Deep Learning', '`Pytorch`')
 txt3('Web development', '`Django`, `Flask`')
-txt3('Model deployment', '`streamlit`, `Heroku`')
+txt3('Model deployment', '`streamlit`, `Heroku`, `AWS`, `GCP`, `Azure`')
 
 #####################
 st.markdown('''
 ## External Certifications
 ''')
 st.markdown('''
+- [Building Cloud Computing Solutions at Scale(4 course specialisation)](https://coursera.org/verify/specialization/JGNCBG6DUGUC) 
+- [Django for Everybody(4 course specialisation)](coursera.org/verify/specialization/3APMN2XPK5TC)
 - [Data Scientist with Python track](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/Data_Scientist_python_track.jpg)
 - [Data Scientist with R track](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/Data_Scientist_R_track.jpg)
 - [Big Data Specialist](data/BD_specialist.jpg)
@@ -196,3 +198,4 @@ st.markdown('''
 ''')
 txt2('LinkedIn', 'https://www.linkedin.com/in/pratik-nandekar-1b3b9a31/')
 txt2('GitHub', 'https://github.com/pratik-1')
+txt2('twitter', 'https://twitter.com/pratiknandekar')
