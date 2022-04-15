@@ -8,17 +8,18 @@ with open("style.css") as f:
 # Header
 st.write('''
 # Pratik Nandekar
-### Python Developer/Data Scientist
+### Data Scientist | Machine Learning Engineer
 ##### *Resume* 
 ''')
 
-image = Image.open('data/dp.jpg')
+image = Image.open('https://user-images.githubusercontent.com/37976329/163193027-fa8bcb0e-dbfe-46fb-ab60-2033f743ad04.jpg')
 st.image(image, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
 - As a python developer, I have experience writing scripts that connects to the database **E**xtract data, perform aggregations or **T**ransformations and **L**oad into other databases or create reports
 - Experience of working with databases such as Oracle and Postgres.
+- Certified in building Cloud Computing Solutions at Scale.
 - Certified Big Data Specialist along with knowledge of data science and machine learning tools and frameworks.
 ''')
 
@@ -109,7 +110,7 @@ st.markdown('''
 txt('**Bachelor of Engineering**, *G.H. Raisoni College of Engineering and Technology, Nagpur*, India', '2009-2013')
 st.markdown(''' 
 - Graduated with First Class Honors.
-- Participated and won 1st prize in technical event in TechFest IIT-Bombay.[[certificate](https://raw.githubusercontent.com/pratik-1/resume/main/data/techfest.jpg)]
+- Participated and won 1st prize in technical event in TechFest IIT-Bombay.[[certificate](https://user-images.githubusercontent.com/37976329/163193023-688b2e95-087f-4922-b8a2-8a06d71cfb5e.jpg)]
 ''')
 
 #####################
@@ -157,7 +158,7 @@ txt('**Trainee**, CLIENT#1(INTERNAL): TCS - ULTIMATIX HRMS, INDIA',  '2014-2016'
 st.markdown('''
 - Prepare functional documents, data migration activities of Core HR module.
 - Development of new reports, automate the report generation process.
-- Single handedly addressed data issues and change requests of HR- international payroll activities.[[award](https://raw.githubusercontent.com/pratik-1/resume/main/data/Special_Initiative.jpg)]
+- Single handedly addressed data issues and change requests of HR- international payroll activities.[[award](https://user-images.githubusercontent.com/37976329/163193015-d1e708b2-46bc-436a-be55-23ce8eef9150.jpg)]
 ''')
 
 #####################
@@ -187,9 +188,9 @@ st.markdown('''
 st.markdown('''
 - [Building Cloud Computing Solutions at Scale(4 course specialisation)](https://coursera.org/verify/specialization/JGNCBG6DUGUC) 
 - [Django for Everybody(4 course specialisation)](https://coursera.org/verify/specialization/3APMN2XPK5TC)
-- [Data Scientist with Python track](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/Data_Scientist_python_track.jpg)
-- [Data Scientist with R track](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/Data_Scientist_R_track.jpg)
-- [Big Data Specialist](https://raw.githubusercontent.com/pratik-1/resume/2aa57121c825d815075e5f471c1fc2d65dbe9826/data/BD_specialist.jpg)
+- [Data Scientist with Python track](https://user-images.githubusercontent.com/37976329/163193025-b174b129-0671-48e2-8be4-9f34ef78ec9c.jpg)
+- [Data Scientist with R track](https://user-images.githubusercontent.com/37976329/163193026-db6abeeb-f1b1-4d73-aa19-4eaf28671bb5.jpg)
+- [Big Data Specialist](https://objects.githubusercontent.com/github-production-repository-file-5c1aeb/458567811/8496910?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220415%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220415T162154Z&X-Amz-Expires=300&X-Amz-Signature=3eb222d5d0920e27babda0bfe94efbd6bf2e2512cad3ac8c105b81fbad346833&X-Amz-SignedHeaders=host&actor_id=37976329&key_id=0&repo_id=458567811&response-content-disposition=attachment%3Bfilename%3DBig.Data_Specialization.certificate.pdf&response-content-type=application%2Fpdf)
 ''')
 
 #####################
