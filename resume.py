@@ -12,12 +12,12 @@ st.write('''
 ##### *Resume* 
 ''')
 
-image = Image.open('https://user-images.githubusercontent.com/37976329/163193027-fa8bcb0e-dbfe-46fb-ab60-2033f743ad04.jpg')
+image = Image.open('data/dp.jpg')
 st.image(image, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
-- As a python developer, I have experience writing scripts that connects to the database **E**xtract data, perform aggregations or **T**ransformations and **L**oad into other databases or create reports
+- As a python developer, I have experience writing scripts that connects to the database **E**xtract data, perform aggregations or **T**ransformations and **L**oad into other databases or create reports.
 - Experience of working with databases such as Oracle and Postgres.
 - Certified in building Cloud Computing Solutions at Scale.
 - Certified Big Data Specialist along with knowledge of data science and machine learning tools and frameworks.
