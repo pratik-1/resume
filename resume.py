@@ -1,25 +1,63 @@
 import streamlit as st
 from PIL import Image
 
-with open("style.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+def remote_css(url):
+    st.markdown(f'<link rel="stylesheet" href="{url}">', unsafe_allow_html=True)
+
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+
+
+def icon(icon_name):
+    st.markdown(f'<i class="material-icons">{icon_name}</i>', unsafe_allow_html=True)
+
+
+@st.cache
+def load_image(image_file):
+    img = Image.open(image_file)
+    return img
+
+
+local_css(file_name="style.css")
+remote_css(url='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"')
+# icon("search")
+
 
 #####################
 # Header
 st.write('''
 # Pratik Nandekar
 ### Data Scientist | Machine Learning Engineer
-##### *Resume* 
 ''')
 
-image = Image.open('data/dp.jpg')
-st.image(image, width=150)
+dp = load_image('data/dp.jpg')
+st.image(dp, width=150)
 
 st.markdown('## Summary', unsafe_allow_html=True)
 st.info('''
-- As a python developer, I have experience writing scripts that connects to the database **E**xtract data, perform aggregations or **T**ransformations and **L**oad into other databases or create reports.
-- Experience of working with databases such as Oracle and Postgres.
-- Certified in building Cloud Computing Solutions at Scale.
+I have around 6 years of work experience which includes Data Engineering role in technologies like Python, Oracle
+and Postgres database, **E**xtract, **T**ransform, **L**oad (ETL) and PL/SQL. Backed by Master’s degree and several
+[certificate course](#certifications) and experience I am skilled in analysing data and creating CICD compliant data and machine
+learning pipelines. I am looking for Data Scientist or Engineering role to help organisation solve challenging real world
+problems and help individuals and organisation grow together.
+
+Roles & Proficiency:
+- Written several python scripts for file handling, automate the report generations.
+- Developed stored procedures for reports and database manipulations.
+- Have hands on experience working on PL/SQL, UNIX/Linux operating systems.
+- Proficiency:
+    - **Exploratory Data Analysis** using Pandas, NumPy (Python), Dplyr (R).
+    - **Data Visualisation** using matplotlib, bokeh (Python), ggplot2(R).
+    - **Machine Learning** includes Classification, Regression, Clustering.
+    - **Natural Language** Processing using Nltk and spaCy (python).
+- Built Cloud-native data engineering and machine learning solutions.
+- Skilled in creating CICD data and ML pipelines on AWS, Azure, GCP.
+- Have knowledge of Django and flask framework.
+- Have knowledge of web scraping.
+- Given training to the junior team members for python and pl/sql.
+- Excellent analytical and decision-making skills with ability to co-ordinate activities in a team.
 - Certified Big Data Specialist along with knowledge of data science and machine learning tools and frameworks.
 ''')
 
@@ -71,7 +109,8 @@ def txt(a, b):
 def txt2(a, b):
     col1, col2 = st.columns([1, 4])
     with col1:
-        st.markdown(f'`{a}`')
+        # st.markdown(f'`{a}`')
+        st.markdown(a)
     with col2:
         st.markdown(b)
 
@@ -93,10 +132,6 @@ def txt4(a, b, c):
     with col3:
         st.markdown(c)
 
-@st.cache
-def load_image(image_file):
-    img = Image.open(image_file)
-    return img
 
 
 #####################
@@ -118,7 +153,7 @@ st.markdown('''
 ## Work Experience
 ''')
 st.markdown('''
-#### **Brillio Technologies Pvt. Ltd.**
+##### **Brillio Technologies Pvt. Ltd.**
 ''')
 txt('**Senior Engineer**, CLIENT: CIENA LTD., MONTREAL, CANADA,', '2019-2019')
 st.markdown('''
@@ -128,7 +163,7 @@ st.markdown('''
 ''')
 
 st.markdown('''
-#### **Tata Consultancy Services Ltd.**
+##### **Tata Consultancy Services Ltd.**
 ''')
 txt('**Information Technology Analyst**, CLIENT#4: ATHENE INSURANCE, USA',  '2018-2019')
 st.markdown('''
@@ -165,8 +200,9 @@ st.markdown('''
 st.markdown('''
 ## Data Science Apps
 ''')
-txt4('Iris prediction app', 'A web app predicts the species of *iris flower* based on input parameters',
+txt4('Iris prediction app', 'A web app that predicts the species of *iris flower* based on input parameters',
      'https://iris-predsapp.herokuapp.com/')
+txt4('Django Application', 'An AWS hosted centralised application of several web services, data and machine learning applications deployed on different servers', 'http://django-cd-environment.eba-inevw5yn.us-west-2.elasticbeanstalk.com')
 
 
 #####################
@@ -176,10 +212,10 @@ st.markdown('''
 txt3('Programming', '`Python`, `R`, `Linux`')
 txt3('Data processing/wrangling', '`SQL`, `pandas`, `numpy`')
 txt3('Data visualization', '`matplotlib`, `seaborn`, `bokeh`, `ggplot2`')
-txt3('Machine Learning', '`scikit-learn`')
-txt3('Deep Learning', '`Pytorch`')
+txt3('Machine Learning', '`scikit-learn`, `Pytorch`')
 txt3('Web development', '`Django`, `Flask`')
-txt3('Model deployment', '`streamlit`, `Heroku`, `AWS`, `GCP`, `Azure`')
+txt3('Model deployment', '`streamlit`, `Heroku`, `AWS`')
+txt3('Cloud', '`AWS`, `GCP`, `Azure`')
 
 #####################
 st.markdown('''
@@ -196,7 +232,9 @@ st.markdown('''
 #####################
 st.markdown('''
 ## Social Media
-''')
-txt2('LinkedIn', 'https://www.linkedin.com/in/pratik-nandekar-1b3b9a31/')
-txt2('GitHub', 'https://github.com/pratik-1')
-txt2('twitter', 'https://twitter.com/pratiknandekar')
+<div class="container">
+  <span><a href="https://www.linkedin.com/in/pratik-nandekar-1b3b9a31/"><i class="fab fa-linkedin fa-3x"></i></a></span>
+  <span><a href="https://twitter.com/pratiknandekar"><i class="fab fa-twitter fa-3x"></i></a></span>
+  <span><a href="https://github.com/pratik-1"><i class="fab fa-github fa-3x"></i></a></span>
+</div>
+''', unsafe_allow_html=True)
