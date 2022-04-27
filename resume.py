@@ -1,6 +1,9 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(page_title='Profile', page_icon="👨‍💻") #'1FAAA')
+
+
 def remote_css(url):
     st.markdown(f'<link rel="stylesheet" href="{url}">', unsafe_allow_html=True)
 
