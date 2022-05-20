@@ -1,3 +1,3 @@
 # Resume app
 
-The web app is built in Python and in an auto-deployable state.
+The web-page is built in Python and in an auto-deployable state.
